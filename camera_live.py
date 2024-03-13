@@ -21,26 +21,26 @@ col3, col4 = st.columns(2)
 # st.video(video_bytes)
 
 with col1:
-   cam1 = st.text_input('cam #1', 'http://192.168.1.101:81/stream',key="cam1",label_visibility="collapsed",placeholder="cam #1 url")
+   cam1 = st.text_input('cam #1', 'http://10.10.13.36:8080/video',key="cam1",label_visibility="collapsed",placeholder="cam #1 url")
    try:
       cam1_feed = st.image(cam1,use_column_width =True)
    except:
       st.image("Original-colour-bar.png")
 with col2:
-   cam2 = st.text_input('cam #2', 'http://192.168.1.101:81/stream',key="cam2",label_visibility="collapsed",placeholder="cam #2 url")
+   cam2 = st.text_input('cam #2', 'http://10.10.13.36:8080/video',key="cam2",label_visibility="collapsed",placeholder="cam #2 url")
    try:
       st.image(cam2,use_column_width =True)
    except:
       st.image("Original-colour-bar.png")
 
 with col3:
-   cam3 = st.text_input('cam #3', 'http://192.168.1.101:81/stream',key="cam3",label_visibility="collapsed",placeholder="cam #3 url")
+   cam3 = st.text_input('cam #3', 'http://10.10.13.36:8080/video',key="cam3",label_visibility="collapsed",placeholder="cam #3 url")
    try:
       st.image(cam3,use_column_width =True)
    except:
       st.image("Original-colour-bar.png")
 with col4:
-   cam4 = st.text_input('cam #4', 'http://192.168.1.101:81/stream',key="cam4",label_visibility="collapsed",placeholder="cam #4 url")
+   cam4 = st.text_input('cam #4', 'http://10.10.13.36:8080/video',key="cam4",label_visibility="collapsed",placeholder="cam #4 url")
    try:
       st.image(cam4,use_column_width =True)
    except:
